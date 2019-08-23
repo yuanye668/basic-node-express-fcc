@@ -1,15 +1,6 @@
 var express = require('express');
 var app = express();
 
-// --> 7)  Mount the Logger middleware here
-app.use((req, res, next) => {
-
- let string = `${req.method} ${req.path} - ${req.ip}`
- console.log("Hello World") 
-   
-  next();
-
-});
 
 // --> 11)  Mount the body-parser middleware  here
 
